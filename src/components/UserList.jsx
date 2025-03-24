@@ -3,7 +3,7 @@ import Fila from "./Fila"
 import Spinner from "./Spinner"
 import UsersContext from "../contexts/UsersContext"
 
-const UserList = ({ setUsuarioAEditar }) => {
+const UserList = () => {
 
   const {usuarios} = useContext(UsersContext)
 
@@ -27,8 +27,7 @@ const UserList = ({ setUsuarioAEditar }) => {
             {usuarios.map((usuario) => (
               <Fila
                 usuario={usuario}
-                key={usuario.id}
-                setUsuarioAEditar={setUsuarioAEditar} />
+                key={usuario.id}/>
             ))}
           </tbody>
         </table>

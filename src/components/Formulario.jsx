@@ -1,6 +1,9 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
+import UsersContext from "../contexts/UsersContext"
 
-const Formulario = ({ agregarUsuario, usuarioAEditar, setUsuarioAEditar, editarUsuario }) => {
+const Formulario = () => {
+
+    const {agregarUsuario, editarUsuario, usuarioAEditar, setUsuarioAEditar} = useContext(UsersContext)
 
     const dataFormularioInicial = {
         id: null,
