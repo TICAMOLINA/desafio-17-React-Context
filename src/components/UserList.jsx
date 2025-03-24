@@ -3,7 +3,7 @@ import Fila from "./Fila"
 import Spinner from "./Spinner"
 import UsersContext from "../contexts/UsersContext"
 
-const UserList = ({ borrarUsuario, setUsuarioAEditar }) => {
+const UserList = ({ setUsuarioAEditar }) => {
 
   const {usuarios} = useContext(UsersContext)
 
@@ -28,7 +28,6 @@ const UserList = ({ borrarUsuario, setUsuarioAEditar }) => {
               <Fila
                 usuario={usuario}
                 key={usuario.id}
-                borrarUsuario={borrarUsuario}
                 setUsuarioAEditar={setUsuarioAEditar} />
             ))}
           </tbody>

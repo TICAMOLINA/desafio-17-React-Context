@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router";
 import Swal from "sweetalert2";
+import UsersContext from "../contexts/UsersContext";
 
-const Fila = ({ usuario, borrarUsuario, setUsuarioAEditar }) => {
+const Fila = ({ usuario, setUsuarioAEditar }) => {
 
+  const {borrarUsuario} = useContext(UsersContext)
   const navigate = useNavigate()
 
   const handleEliminar = (id) => {

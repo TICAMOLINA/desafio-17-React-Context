@@ -9,8 +9,6 @@ const App = () => {
 
   const agregarUsuario = async (nuevoUsuario) => {}
 
-  const borrarUsuario = async (id) => {}
-
   const editarUsuario = async (usuarioEditado) => {}
 
   return (
@@ -23,7 +21,6 @@ const App = () => {
           setUsuarioAEditar={setUsuarioAEditar}
           editarUsuario={editarUsuario} />
         <UserList
-          borrarUsuario={borrarUsuario}
           setUsuarioAEditar={setUsuarioAEditar} />
     </>
   )
