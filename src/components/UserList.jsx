@@ -1,8 +1,11 @@
+import { useContext } from "react"
 import Fila from "./Fila"
 import Spinner from "./Spinner"
+import UsersContext from "../contexts/UsersContext"
 
-const UserList = ({ usuarios, borrarUsuario, setUsuarioAEditar }) => {
+const UserList = ({ borrarUsuario, setUsuarioAEditar }) => {
 
+  const {usuarios} = useContext(UsersContext)
 
 
   return (
