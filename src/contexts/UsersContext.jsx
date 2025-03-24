@@ -1,15 +1,18 @@
-const { createContext } = require("react");
+import { createContext, useState } from "react"
 
-const UserContext = createContext()
+
+const UsersContext = createContext()
 
 const UsersProvider = ( {children }) => {
 
-    const data = {
+    const [users, setUsers] = useState([])
 
+    const data = {
+        users
     }
 
-    return <UserContext.Provider value={data}> {children}</UserContext.Provider>
+    return <UsersContext.Provider value={data}> {children}</UsersContext.Provider>
 }
 
 export {UsersProvider}
-export default UserContext
+export default UsersContext
