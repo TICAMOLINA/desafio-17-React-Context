@@ -1,0 +1,17 @@
+@import '@fontsource/poppins/100.css';
+@import '@fontsource/poppins/300.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/800.css';
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(248,52,95);
+    background: linear-gradient(159deg, rgba(248,52,95,1) 27%, rgba(90,50,168,1) 57%);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
